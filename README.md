@@ -76,7 +76,7 @@ mysql> SHOW DATABASES;
 5 rows in set (0.00 sec)
 ```
 3. Connect to this MySQL instance from whatever client and create at least two tables with sample data.  
-img  
+![img](https://github.com/terra144481/test_svoboda/blob/19878694190ae416228cd814ec66342046890bac/Images/shema.png)  
 Create `mydb_test` using Mysql workbanch
 
 ```
