@@ -8,6 +8,7 @@ persistent storage.
 data.  
 4. Run SQL query on tables created at point 2. using INNER and LEFT JOIN.  
 
+Answer:
 
 1. Using Docker Compose (compose file) create service running basic MySQL instance with ersistent storage.  
 ```
