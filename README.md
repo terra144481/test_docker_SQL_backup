@@ -1,5 +1,12 @@
 # test_svoboda
-task from Radio Svoboda
+TASK 1  
+On Docker Desktop/Docker CE  
+1. Using Docker Compose (compose file) create service running basic MySQL instance with
+persistent storage.  
+2. Make sure mysql is HA (at least two instances of mysql)  
+3. Connect to this MySQL instance from whatever client and create at least two tables with sample
+data.  
+4. Run SQL query on tables created at point 2. using INNER and LEFT JOIN.  
 
 
 1. Using Docker Compose (compose file) create service running basic MySQL instance with ersistent storage.  
@@ -209,7 +216,8 @@ mysql> SELECT usr.name, invoces.idinvoces FROM usr LEFT JOIN invoces ON usr.idus
 ```
 
 
-TASK 2
+TASK 2  
+
 On Windows 10 system (not windows server) machine provide mechanism how to create keytab file for 
 dummy@EXAMPLE.ORG domain user. Describe how can be this file used for the Linux container 
 authentication against the domain resources using Kerberos. If any additional code or configuration is 
