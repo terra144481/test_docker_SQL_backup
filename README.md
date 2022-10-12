@@ -209,5 +209,27 @@ mysql> SELECT usr.name, invoces.idinvoces FROM usr LEFT JOIN invoces ON usr.idus
 ```
 
 
+TASK 2
+On Windows 10 system (not windows server) machine provide mechanism how to create keytab file for 
+dummy@EXAMPLE.ORG domain user. Describe how can be this file used for the Linux container 
+authentication against the domain resources using Kerberos. If any additional code or configuration is 
+needed on the top of the docker compose functionality, use the bash / PowerShell scripting.  
+
+1. Create a keytab file using ktab.sh at command line windows 10.  
+```
+#!/bin/sh
+
+#create keytabfile for windows10
+ktab -a dummy@EXAMPLE.ORG mypassword -n 0 -k c:\kerberos\dummy.keytab
+```
+
+2. Create /etc/krb5.conf file at container with MYSQL Linux.  
+```
+[libdefaults]
+default_realm = EXAMPLE.ORG
+```
+3. Connect to container with MYSQL Linux using keytab `file MSSQLSvc/sqlcontainer.EXAMPLE.ORG:42333`.  
+
+
 
 
