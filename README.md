@@ -1,4 +1,4 @@
-# test_svoboda
+# test_docker
 TASK 1  
 On Docker Desktop/Docker CE  
 1. Using Docker Compose (compose file) create service running basic MySQL instance with
